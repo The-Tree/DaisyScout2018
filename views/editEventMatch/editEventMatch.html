@@ -1,0 +1,70 @@
+<div id="editEventMatch">
+	<h2>Edit Match Records</h2>
+	<div ng-controller="EditEventMatchCtrl">
+		<form>
+			<!-- The information on the team and who provided the information -->
+			<b>Match Info</b>
+			<table>				
+				<tr>
+				<td>Match Number:</td><td>{{match.match_num}}</td>
+				</tr>
+				
+				
+			</table>
+			
+			<br/>
+				
+			<!-- red team -->
+           <b>Red Team</b>
+			<table>
+				<td>Team 1</td>
+				<td><input type="text" ng-model="match.red_alliance1"></td>
+				</tr>
+
+                <tr>
+				<td>Team 2</td>
+				<td><input type="text" ng-model="match.red_alliance2"></td>
+				</tr>
+				
+				<tr>
+				<td>Team 3 </td>
+				<td><input type="text" ng-model="match.red_alliance3"></td>
+				</tr>
+				
+				<tr>
+				<td>Score </td>
+				<td><input type="text" ng-model="match.red_score"></td>
+				</tr>
+			</table>
+			
+			<!-- blue team -->
+            <b>Blue Team</b>
+			<table>
+				<td>Team 1</td>
+				<td><input type="text" ng-model="match.blue_alliance1"></td>
+				</tr>
+
+                <tr>
+				<td>Team 2</td>
+				<td><input type="text" ng-model="match.blue_alliance2"></td>
+				</tr>
+				
+				<tr>
+				<td>Team 3 </td>
+				<td><input type="text" ng-model="match.blue_alliance3"></td>
+				</tr>
+				
+				<tr>
+				<td>Score </td>
+				<td><input type="text" ng-model="match.blue_score"></td>
+				</tr>
+			</table>
+			
+			<br/>
+			
+			</td><td><input type="submit" ng-click="updateEventMatch()" value="Update Event Match">
+
+		</form>
+		
+	</div>
+</div>

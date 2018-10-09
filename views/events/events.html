@@ -1,0 +1,25 @@
+<!-- ALTHOUGH THERE IS NO ADD EVENT FUNCTION, THIS SHOULD NOT BE DELETED -->
+
+<div id="events">
+	<h2>Events</h2>
+	<div ng-controller="EventsCtrl">
+		<form>
+			<label>Event Name: <input type="text" ng-model="eventName"></label>
+			<br>
+			<input type="submit" ng-click="addEvent(eventName)" value="Add Event">
+		</form>
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+			</tr>
+			<tr ng-repeat="event in events">
+				<td>{{event.event_id}}</td>
+				<td>{{event.name}}</td>
+			</tr>
+		</table>
+		<br/>
+		
+	</div>
+</div>

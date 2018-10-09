@@ -1,0 +1,169 @@
+<div id="matchRecords">
+	<!-- Allows quick access of the main event page -->
+	<div>
+		<br>
+		<a href = "#/event/{{event.event_id}}" class = "btn" >Return to Index</a>
+		</br>
+	</div>
+
+
+	<h2>Match Records</h2>
+	
+	
+	
+	<div ng-controller="MatchRecordsCtrl">
+	
+		<form id="matchRecordForm">
+		
+			<!-- The information on the team and who provided the information -->
+			<b>Team and Match Info</b>
+			<table >
+				<tr>
+				<td>Scout Name:</td><td><input type="text" ng-model="scout_name"></td>
+				</tr>
+			
+				<tr>
+				<td>Team Number:</td><td><input type="text" ng-model="team_num"></td>
+				</tr>
+				
+				<tr>
+                <td>Alliance Color:</td><td><input type="radio" value="red" name="alliance_color" ng-model="alliance_color"> Red <input type="radio" value="blue" name="alliance_color" ng-model="alliance_color"> Blue</td>
+                </tr> 
+				
+				<tr>
+				<td>Match Number:</td><td><input type="text" ng-model="match_num"></td>
+				</tr>
+			</table>
+			
+			<br/>
+			
+			<!-- The scores and values and such of the autonomous period -->
+            <b>Autonomous</b>
+			<table>
+				
+				<tr>
+                <td>Crossed the midline?</td><td><input type="radio" value="yes" name="auton_midline" ng-model="auton_midline"> Yes <input type="radio" value="no" name="auton_midline" ng-model="auton_midline"> No</td>
+                </tr> 
+				
+				<tr>
+				<td>Number of Power Cubes placed on alliance switch:</td><td><input type="text" ng-model="auton_switch"></td>
+				</tr>
+
+                <tr>
+				<td>Number of Power Cubes placed on scale:</td><td><input type="text" ng-model="auton_scale"></td>
+				</tr>
+				
+				<tr>
+				<td>Number of Power Cubes placed in vault: </td>
+				<td><input type="text" ng-model="auton_vault"></td>
+				</tr>
+				
+				<tr>
+				<td>Power Cubes collected: </td>
+				<td><input type="text" ng-model="auton_collected"></td>
+				</tr>
+				
+			</table>
+			
+			<br/>
+			
+			<!-- The scores and values and such of the teleoperated period -->
+            <b>Teleoperated</b>
+			<table>
+				<tr>
+				<td>Number of Power Cubes placed on alliance switch:</td><td><input type="text" ng-model="alliance_switch"></td>
+				</tr>
+				
+				<tr>
+				<td>Number of Power Cubes placed on enemy switch:</td><td><input type="text" ng-model="enemy_switch"></td>
+				</tr>
+
+                <tr>
+				<td>Number of Power Cubes placed on scale:</td><td><input type="text" ng-model="scale"></td>
+				</tr>
+				
+				<tr>
+				<td>Power Cubes collected: </td>
+				<td><input type="text" ng-model="collected"></td>
+				</tr>
+				
+				<tr>
+				<td>Number of Power Cubes placed in vault: </td>
+				<td><input type="text" ng-model="vault"></td>
+				</tr>
+			
+				<tr>
+                <td>Force level used:</td><td><input type="radio" value="3" name="force_used" ng-model="force_used">3 
+												<input type="radio" value="2" name="force_used" ng-model="force_used">2 
+												<input type="radio" value="1" name="force_used" ng-model="force_used">1 
+												<input type="radio" value="0" name="force_used" ng-model="force_used">Not used</td>
+                </tr> 
+				
+				<tr>
+				<td>Force used when: </td>
+				<td><input type="text" ng-model="force_when"><input type="radio" value="-1" name="force_when" ng-model="force_when">Not used</td>
+				</tr>
+				
+				<tr>
+                <td>Boost level used:</td><td><input type="radio" value="3" name="boost_used" ng-model="boost_used">3 
+												<input type="radio" value="2" name="boost_used" ng-model="boost_used">2 
+												<input type="radio" value="1" name="boost_used" ng-model="boost_used">1 
+												<input type="radio" value="0" name="boost_used" ng-model="boost_used">Not used</td>
+                </tr> 
+				
+				<tr>
+				<td>Boost used when: </td>
+				<td><input type="text" ng-model="boost_when"><input type="radio" value="-1" name="boost_when" ng-model="boost_when">Not used</td>
+				</tr>
+				
+				<tr>
+                <td>Levitate used:</td><td><input type="radio" value="1" name="levitate_used" ng-model="levitate_used">Yes
+												<input type="radio" value="0" name="levitate_used" ng-model="levitate_used">No</td>
+                </tr> 
+				
+			</table>
+			
+			<br/>
+			
+			<!-- End Game, comments -->
+			<b>End Game</b>
+			<table>
+				<tr>
+                <td>Hanged:</td><td><input type="radio" value="yes" name="hang" ng-model="hang"> Yes <input type="radio" value="no" name="hang" ng-model="hang"> No <input type="radio" value="levitate" name="hang" ng-model="hang"> Levitated </td>
+                </tr> 
+				
+				<tr>
+				<td>End Score:</td><td> <input type="text" ng-model="end_score"></td>
+				</tr>
+				
+				<tr>
+                <td>Parked:</td><td><input type="radio" value="yes" name="park" ng-model="park"> Yes <input type="radio" value="no" name="park" ng-model="park"> No
+                </tr> 
+				
+				<tr>
+                <td>Partners Lifted:</td><td>	<input type="radio" value="2" name="partners_lifted" ng-model="partners_lifted">2 
+												<input type="radio" value="1" name="partners_lifted" ng-model="partners_lifted">1 
+												<input type="radio" value="0" name="partners_lifted" ng-model="partners_lifted">0</td>
+                </tr>
+				
+				<tr>
+				<td>Penalty Points:</td><td> <input type="text" ng-model="penalty_points"></td>
+				</tr>
+				
+				<tr>
+				<td>Comments:</td><td> <input type="message" ng-model="comments"></td>
+				</tr>
+			
+			</table>
+			
+			<input type="submit" ng-click="addMatchRecord(scout_name, team_num, alliance_color, match_num, auton_midline, auton_switch, auton_scale, auton_vault, auton_collected, alliance_switch, enemy_switch, scale, collected, vault, force_used, force_when, boost_used, boost_when, levitate_used, hang, park, partners_lifted, end_score, penalty_points, comments)" value="Add Match Record">
+		
+		</form>
+		
+		<br>
+		
+		<!--<img src="views/matchRecords/the_love_of_my_life.jpg" alt="Inconspicuous">-->
+	
+	</div>
+
+</div>

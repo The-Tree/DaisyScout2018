@@ -1,0 +1,153 @@
+<div id="teamOverview">
+	<div ng-controller="TeamViewerCtrl">
+		
+		<div>
+			<br>
+			<a href = "#/event/{{event.event_id}}/teams" class = "btn" >Return to Teamlist</a>
+			</br>
+			<br>
+			<a href = "#/event/{{event.event_id}}/team/{{prev_team}}" class = "btn">Go to Team {{prev_team}}</a>
+			<a href = "#/event/{{event.event_id}}/team/{{next_team}}" class = "btn">Go to Team {{next_team}}</a>
+			</br>
+		</div>
+		
+		<img src="../pics/{{team.team_num}}.jpg" alt="team picture" height="240" align="right"> 
+		<h1>{{team.team_num}} - {{team.name}}</h1>
+		{{team.locality}}, {{team.region}}
+
+		<p><b> Base dimensions: {{interview.base_width}} inches wide by {{interview.base_length}} inches long.</p>
+		Drive System: {{interview.drive_system}} <br>
+		Wheel Num: {{interview.wheel_num}} <br>
+		Speed: {{interview.speed}} ft / sec <br>
+		
+		<!--<h3>Interview Data</h3>
+		<a href="#/event/{{event.event_id}}/editInterview/{{interview.interview_id}}">Edit Interview Data</a>
+		<table class="table table-striped">
+			<tr>
+				<th ng-click="reverse=!reverse; order('width', reverse)">Width</th>
+                <th ng-click="reverse=!reverse; order('length', reverse)">Length</th>
+				<th ng-click="reverse=!reverse; order('height', reverse)">Height</th>
+                <th ng-click="reverse=!reverse; order('drive_motors', reverse)">Drive Motors</th>
+                <th ng-click="reverse=!reverse; order('wheel_num', reverse)">Wheel #</th>
+				<th ng-click="reverse=!reverse; order('drive_system', reverse)">Drive System</th>
+				<th ng-click="reverse=!reverse; order('wheel_type', reverse)">Wheel Type</th>
+				<th ng-click="reverse=!reverse; order('speed', reverse)">Speed</th>
+				<th ng-click="reverse=!reverse; order('shooter_type', reverse)">Shooter Type</th>
+				<th ng-click="reverse=!reverse; order('capacity', reverse)">Ball Capacity</th>
+				<th ng-click="reverse=!reverse; order('ball_rof', reverse)">Ball ROF</th>
+				<th ng-click="reverse=!reverse; order('primary_goal', reverse)">Primary Goal</th>
+				<th ng-click="reverse=!reverse; order('gear_ability', reverse)">Gear Ability</th>
+				<th ng-click="reverse=!reverse; order('scale_ability', reverse)">Climb Ability</th>
+			</tr>
+			<tr>
+			    <td>{{interview.base_width}}</td>
+			    <td>{{interview.base_length}}</td>
+				<td>{{interview.base_height}}</td>
+			    <td>{{interview.drive_motors}}</td>
+                <td>{{interview.wheel_num}}</td>
+				<td>{{interview.drive_system}}</td>
+				<td>{{interview.wheel_type}}</td>
+				<td>{{interview.speed}}</td>
+				<td>{{interview.shooter_type}}</td>
+				<td>{{interview.capacity}}</td>
+				<td>{{interview.ball_rof}}</td>
+				<td>{{interview.primary_goal}}</td>
+				<td>{{interview.gear_ability}}</td>
+				<td>{{interview.scale_ability}}</td>
+			</tr>
+		</table>-->
+		<h3>Match Data</h3>
+		<table class="table table-striped">
+		<tr>
+				<th ng-click="reverse=!reverse; order('match_num', reverse)">Match #</th>
+				<th ng-click="reverse=!reverse; order('scout_name', reverse)">Scout</th>
+				<!--<th ng-click="reverse=!reverse; order('alliance_color', reverse)">Alliance Color</th>-->
+				<th ng-click="reverse=!reverse; order('auton_midline', reverse)">Auton Midline</th>
+				<th ng-click="reverse=!reverse; order('auton_switch', reverse)">Auton Switch</th>
+				<th ng-click="reverse=!reverse; order('auton_scale', reverse)">Auton Scale</th>
+				<th ng-click="reverse=!reverse; order('auton_vault', reverse)">Auton Vault</th>
+				<th ng-click="reverse=!reverse; order('auton_collected', reverse)">Auton Collected</th>
+				<th ng-click="reverse=!reverse; order('alliance_switch', reverse)">Alliance Switch</th>
+                <th ng-click="reverse=!reverse; order('enemy_switch', reverse)">Opponent Switch</th>
+				<th ng-click="reverse=!reverse; order('scale', reverse)">Scale</th>
+                <th ng-click="reverse=!reverse; order('collected', reverse)">Collected</th>
+				<th ng-click="reverse=!reverse; order('vault', reverse)">Vault</th>
+				<th ng-click="reverse=!reverse; order('force_used', reverse)">Force Used</th>
+				<th ng-click="reverse=!reverse; order('force_when', reverse)">Force When</th>
+				<th ng-click="reverse=!reverse; order('boost_used', reversed)">Boost Used</th>
+				<th ng-click="reverse=!reverse; order('boost_when', reverse)">Boost When</th>
+				<th ng-click="reverse=!reverse; order('levitate_used', reverse)">Levitate Used</th>
+                <th ng-click="reverse=!reverse; order('hang', reverse)">Hanged</th>
+				<th ng-click="reverse=!reverse; order('park', reverse)">Parked</th>
+				<th ng-click="reverse=!reverse; order('partners_lifted', reverse)">Partners Lifted</th>
+				<!--<th ng-click="reverse=!reverse; order('end_score', reverse)">End Score</th>-->
+				<th ng-click="reverse=!reverse; order('penalty_points', reverse)">Penalty Points</th>
+				<th ng-click="reverse=!reverse; order('comments', reverse)">Comments</th>
+				<th>Edit Match</th>
+			</tr>
+			<tr ng-repeat="match in matches">
+				<td>{{match.match_num}}</td>
+				<td>{{match.scout_name}}</td>
+				<!--<td>{{match.alliance_color}}</td>-->
+				<td>{{match.auton_midline}}</td>
+				<td>{{match.auton_switch}}</td>
+				<td>{{match.auton_scale}}</td>
+				<td>{{match.auton_vault}}</td>
+				<td>{{match.auton_collected}}</td>
+				<td>{{match.alliance_switch}}</td>
+				<td>{{match.enemy_switch}}</td>
+				<td>{{match.scale}}</td>
+				<td>{{match.collected}}</td>
+				<td>{{match.vault}}</td>
+				<td>{{match.force_used}}</td>
+				<td>{{match.force_when}}</td>
+                <td>{{match.boost_used}}</td>
+				<td>{{match.boost_when}}</td>
+				<td>{{match.levitate_used}}</td>
+				<td>{{match.hang}}</td>
+				<td>{{match.park}}</td>
+				<td>{{match.partners_lifted}}</td>
+				<!--<td>{{match.end_score}}</td>-->
+				<td>{{match.penalty_points}}</td>
+				<td>{{match.comments}}</td>
+				
+				<td><a href="#/event/{{event.event_id}}/editMatch/{{match.match_id}}">Edit Match Data</a></td>
+
+			</tr>
+		</table>
+		
+		<h3>Averages</h3>
+		<table class="table table-striped">
+		<tr>
+				<!--<th ng-click="reverse=!reverse; order('alliance_color', reverse)">Alliance Color</th>-->
+				<th ng-click="reverse=!reverse; order('auton_midline', reverse)">Auton Midline</th>
+				<th ng-click="reverse=!reverse; order('auton_switch', reverse)">Auton Switch</th>
+				<th ng-click="reverse=!reverse; order('auton_scale', reverse)">Auton Scale</th>
+				<th ng-click="reverse=!reverse; order('auton_vault', reverse)">Auton Vault</th>
+				<th ng-click="reverse=!reverse; order('alliance_switch', reverse)">Alliance Switch</th>
+                <th ng-click="reverse=!reverse; order('enemy_switch', reverse)">Opponent Switch</th>
+				<th ng-click="reverse=!reverse; order('scale', reverse)">Scale</th>
+				<th ng-click="reverse=!reverse; order('vault', reverse)">Vault</th>
+                <th ng-click="reverse=!reverse; order('hang', reverse)">Hanged</th>
+				<th ng-click="reverse=!reverse; order('park', reverse)">Parked</th>
+				<th ng-click="reverse=!reverse; order('partners_lifted', reverse)">Partners Lifted</th>
+			</tr>
+
+			<tr>
+				<!--<td>{{match.alliance_color}}</td>-->
+				<td>{{average.auton_midline}}</td>
+				<td>{{average.auton_switch}}</td>
+				<td>{{average.auton_scale}}</td>
+				<td>{{average.auton_vault}}</td>
+				<td>{{average.alliance_switch}}</td>
+				<td>{{average.enemy_switch}}</td>
+				<td>{{average.scale}}</td>
+				<td>{{average.vault}}</td>
+				<td>{{average.hang}}</td>
+				<td>{{average.park}}</td>
+				<td>{{average.partners_lifted}}</td>
+			</tr>
+		</table>
+				
+	</div>
+</div>

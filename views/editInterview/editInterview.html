@@ -1,0 +1,128 @@
+<!-- A GOOD IDEA IS TO MAKE SURE THIS AND INTERVIEWRECORDS.HTML HAVE THE SAME VARIABLES -->
+
+
+<div id="editInterviewRecord">
+	<h2>Edit Interview Records</h2>
+	<div ng-controller="EditInterviewRecordCtrl">
+		<form>
+		<!-- Inputting data is below-->
+		<h2>Overall</h2>        
+            <table>
+				<tr>
+				<td><label>Scout Name:</td><td><input type="text" name="scout_name" ng-model="interview.scout_name"></label></td>
+				</tr>
+				<tr>
+				<td><label>Team Number:</td><td><input type="text" name="team_num" ng-model="interview.team_num"></label></td>
+				</tr>
+			</table>
+			<!-- Information about the drive system. Might want to be kept for the future-->
+            <h2>Drive System</h2>
+			<table>
+				<br>
+				<tr>
+				<td><label>Base Width:</td><td><input type="text" name="width" ng-model="interview.base_width"> inches</td>
+				</tr>
+				<tr>
+                <td><label>Base Length:</td><td><input type="text" name="length" ng-model="interview.base_length"> inches</td>
+				</tr>
+				<tr>
+                <td><label>Base Height:</td><td><input type="text" name="height" ng-model="interview.base_height"> inches</td>
+				</tr>
+				<tr>
+				<td>Type of drive motors:</td>
+				<td><input type="radio" value="CIM" name="drive_motors" ng-model="interview.drive_motors"> CIM
+				<input type="radio" value="MiniCIM" name="drive_motors" ng-model="interview.drive_motors"> MiniCIM
+				<input type="radio" value="775" name="drive_motors" ng-model="interview.drive_motors"> 775</td>
+				</tr>
+				<tr>
+				<td><label># of Wheels:</td><td><input type="text" ng-model="interview.wheel_num" value="4"></label></td>
+				</tr>
+				<tr>
+				<td><label>Drive System:</td><td>
+                <input type="radio" value="tank" name="drive_system" ng-model="interview.drive_system"> High Traction Tank </br>
+				<input type="radio" value="Mecanum" name="drive_system" ng-model="interview.drive_system"> Mecanum </br>
+				<input type="radio" value="Kit Tank" name="drive_system" ng-model="interview.drive_system"> Kit Tank </br>
+				<input type="radio" value="Swerve" name="drive_system" ng-model="interview.drive_system"> Swerve </br>
+				<input type="radio" value="Omni Traction Hybrid" name="drive_system" ng-model="interview.drive_system"> Omni Traction Hybrid </br>
+				Other: <input type = "text" name = "drive_system" ng-model="interview.drive_system"></label></td>
+				</tr>
+				<tr>
+				<td>Wheel type:</td>
+				<td>
+				<input type="radio" value="Colsons" name="wheel_type" ng-model="interview.wheel_type"> Colsons </br>
+				<input type="radio" value="Pneumatic" name="wheel_type" ng-model="interview.wheel_type"> Pneumatic </br>
+				<input type="radio" value="Omni" name="wheel_type" ng-model="interview.wheel_type"> Omni</br>
+				<input type="radio" value="AndyMark" name="wheel_type" ng-model="interview.wheel_type"> AndyMark </br>
+				<input type="radio" value="KOP" name="wheel_type" ng-model="interview.wheel_type"> KOP </br>
+				<input type="radio" value="Mecanum" name="wheel_type" ng-model="interview.wheel_type"> Mecanum </br>
+                <input type="radio" value="Custom" name="wheel_type" ng-model="interview.wheel_type"> Custom
+				</td>
+				</tr>
+				<tr>
+				<td><label>Speed:</td><td><input type="text" ng-model="interview.speed"> feet per second.</label></td>
+				</tr>
+			</table>
+			<!-- Shooter information. Recycle as necessary-->
+			<h2>Shooter</h2>
+			<table>
+            <tr>
+            <td><label>Shooter Type:</td><td>
+			      <input type="radio" value="catapault" name="shooter_type" ng-model="interview.shooter_type"> Catapault </br>
+				<input type="radio" value="slingshot" name="shooter_type" ng-model="interview.shooter_type"> Slingshot </br>
+				<input type="radio" value="Puncher" name="shooter_type" ng-model="interview.shooter_type"> Puncher </br>
+				<input type="radio" value="Kicker" name="shooter_type" ng-model="interview.shooter_type"> Kicker </br>
+				<input type="radio" value="PitchingWheel" name="shooter_type" ng-model="interview.shooter_type"> Pitching Wheel </br>
+				Other: <input type = "text" name = "shooter_type" ng-model="interview.shooter_type"></label></td>
+			  </tr>
+				<tr>
+				<td><label>Ball Capacity:</td><td><input type="text" ng-model="interview.capacity">balls</label></td>
+				</tr>
+				
+				<tr>
+				<td><label>Ball Rate of Fire:</td><td><input type="text" ng-model="interview.ball_rof"> balls per second</label></td>
+				</tr>
+				
+				<tr>
+				<td><label>Primary Goal:</td><td>
+				<input type="radio" value="high" name="primary_goal" ng-model="interview.primary_goal"> High </br>
+				<input type="radio" value="low" name="primary_goal" ng-model="interview.primary_goal"> Low </br>
+				<input type="radio" value="both" name="primary_goal" ng-model="interview.primary_goal"> Both
+			</table>
+			<!-- Game-specific data-->
+			<h2>Game</h2>
+			<table>
+				<tr>
+				<td><label>Gear Manipulation Ability:</td><td>Yes<input type="radio" value="yes" name="gear_ability" ng-model="interview.gear_ability">No<input type="radio" value="no" name="gear_ability" ng-model="interview.gear_ability"></label></td>
+				</tr>
+				<tr>
+				<td><label>Gear Loading:</td><td>Human<input type="radio" value="Human" name="gear_loading" ng-model="interview.gear_loading"> Floor<input type="radio" value="Floor" name="gear_loading" ng-model="interview.gear_loading"></label></td>
+				</tr>
+				<tr>
+				<td><label>Climb Ability:</td><td>Yes<input type="radio" value="yes" name="scale_ability" ng-model="interview.scale_ability">No<input type="radio" value="no" name="scale_ability" ng-model="interview.scale_ability"></label></td>
+				</tr>
+			</table>
+			
+			<h2>Autonomous</h2>
+			<table>
+				<tr>
+				<td><label>Mobility Points:</td><td>Yes<input type="radio" value="yes" name="auton_mobility" ng-model="interview.auton_mobility">No<input type="radio" value="no" name="auton_mobility" ng-model="interview.auton_mobility"></label></td>
+				</tr>
+				<tr>
+				<td><label>Autoload Balls:</td><td>Yes<input type="radio" value="yes" name="auton_autoload" ng-model="interview.auton_autoload">No<input type="radio" value="no" name="auton_autoload" ng-model="interview.auton_autoload"></label></td>
+				</tr>
+				<tr>
+				<td><label>Ball Scoring:</td><td>High<input type="radio" value="high" name="auton_ball" ng-model="interview.auton_ball">Low<input type="radio" value="low" name="auton_ball" ng-model="interview.auton_ball">Both<input type="radio" value="both" name="auton_ball" ng-model="interview.auton_ball">None<input type="radio" value="none" name="auton_ball" ng-model="interview.auton_ball"></label></td>
+				</tr>
+				<tr>
+				<td><label>Number of gears scored:</td><td>0<input type="radio" value="0" name="auton_num_gears" ng-model="interview.auton_num_gears"> 1<input type="radio" value="1" name="auton_num_gears" ng-model="interview.auton_num_gears">2<input type="radio" value="2" name="auton_num_gears" ng-model="interview.auton_num_gears">
+				</tr>
+				<tr>
+				<td>Description of Autonomous function:</td><td> <input type="message" ng-model="interview.auton_description"></td>
+				</tr>
+			</table>
+			
+			<input type="submit" ng-click="updateInterviewRecord()" value="Update Interview Record">
+		</form>
+		
+	</div>
+</div>

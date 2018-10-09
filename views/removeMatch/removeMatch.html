@@ -1,0 +1,29 @@
+<div id="removeMatch">
+	<h2>Edit Match Records</h2>
+	<div ng-controller="RemoveMatchRecordCtrl">
+		<form>
+			<!-- The information on the team and who provided the information -->
+			<b>Team and Match Info</b>
+			<table >
+				<tr>
+				<td>Team Number:</td><td><input type="text" ng-model="team_num"></td>
+				</tr>
+				
+				<tr>
+				<td>Match Number:</td><td><input type="text" ng-model="match_num"></td>
+				</tr>
+				
+				<tr>
+				<td>Event Number:</td><td><input type="text" ng-model="scout_name"></td>
+				</tr>
+			</table>
+			
+			<br/>
+			
+			</table>
+			</td><td><input type="submit" ng-click="removeLine(team_num, match_num, scout_name)" value="Remove Match Record">
+
+		</form>
+		
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="daisyscoutApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="daisyscoutApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="daisyscoutApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="daisyscoutApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DaisyScout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+  <div id="header">
+    <a href="#/selectEvent" class="no-decoration"><span id="appTitle" class="title">DaisyScout</span></a>	
+<!--<a href="#/events">Add an Event</a>-->
+  </div>
+
+  <div ng-view></div>
+  
+  <script src="ThirdParty/angular.js"></script>
+  <script src="ThirdParty/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="views/events/events.js"></script>
+  <script src="views/matchRecords/matchRecords.js"></script>
+  <script src="views/interviewRecords/interviewRecords.js"></script>
+  <script src="views/eventViewer/eventViewer.js"></script>
+  <script src="views/selectEvent/selectEvent.js"></script>
+  <script src="views/teamViewer/teamViewer.js"></script>
+  <script src="views/editInterview/editInterview.js"></script>
+  <script src="views/editMatch/editMatch.js"></script>
+
+</body>
+</html>

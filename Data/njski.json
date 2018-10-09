@@ -1,0 +1,353 @@
+[
+  {
+    "city": "Somerville",
+    "country": "USA",
+    "key": "frc102",
+    "name": "Janssen Pharmaceuticals Inc./Piccatinny Arsenal/Siemens Building Technologies/Air Liquide/PSEG/Dr. Victor J. Bauer/Central Jersey Trailer and Hitch LLC/Alloy Welding Company, Inc./Gerber Metal Supply Company&Somerville High",
+    "nickname": "The Gearheads",
+    "state_prov": "New Jersey",
+    "team_number": 102
+  },
+  {
+    "city": "Flanders",
+    "country": "USA",
+    "key": "frc11",
+    "name": "Siemens/National Defense Education Program/BAE Systems/ASCO/Chameleon Designs/Nokia/LGS Innovations/Mt. Olive School District&Mt  Olive High",
+    "nickname": "MORT",
+    "state_prov": "New Jersey",
+    "team_number": 11
+  },
+  {
+    "city": "Somerville",
+    "country": "USA",
+    "key": "frc1279",
+    "name": "Picatinny STEM/Nokia Bell Labs/Immaculata High School&Immaculata High School",
+    "nickname": "Cold Fusion",
+    "state_prov": "New Jersey",
+    "team_number": 1279
+  },
+  {
+    "city": "Plainfield",
+    "country": "USA",
+    "key": "frc136",
+    "name": "Plainfield Board of Education / Ivy Visions, Inc. & Plainfield High",
+    "nickname": "Killer Kardinals",
+    "state_prov": "New Jersey",
+    "team_number": 136
+  },
+  {
+    "city": "Skillman",
+    "country": "USA",
+    "key": "frc1403",
+    "name": "Montgomery Township School District/nrg energy/Bristol-Myers Squibb/National Defense Education Program & Montgomery High",
+    "nickname": "Cougar Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 1403
+  },
+  {
+    "city": "Metuchen",
+    "country": "USA",
+    "key": "frc1626",
+    "name": "St Joseph High School",
+    "nickname": "Falcon Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 1626
+  },
+  {
+    "city": "Montvale",
+    "country": "USA",
+    "key": "frc1676",
+    "name": "Dassault Falcon Jet/Shop Rite-Inserra Supermarkets/Orange and Rockland Utilities/Ralpho's Pizzeria/The BMW Group/NBC Universal/NASA/Dimensional Communications/BAE Systems/Marketing & Sales Resources/Everest Reinsurance Inc./Bissinger-Pantalone Family/Vetter-Panozzo Family&Pascack Valley Regional HIgh School District",
+    "nickname": "The Pascack PI-oneers",
+    "state_prov": "New Jersey",
+    "team_number": 1676
+  },
+  {
+    "city": "Flanders",
+    "country": "USA",
+    "key": "frc193",
+    "name": "Mt. Olive Board of Education/Mount Olive Robotics Education Association & Mt  Olive High",
+    "nickname": "MORT Beta",
+    "state_prov": "New Jersey",
+    "team_number": 193
+  },
+  {
+    "city": "Ewing",
+    "country": "USA",
+    "key": "frc2016",
+    "name": "Johnson & Johnson Consumer and Personal Products Worldwide/nrg/DOTC STEM Picatinny/National Defense Education Program/Ewing Township Education Association/Morris Millwork/RJD Machining Products Inc.&Ewing High&New Jersey School for the Deaf",
+    "nickname": "Mighty Monkey Wrenches",
+    "state_prov": "New Jersey",
+    "team_number": 2016
+  },
+  {
+    "city": "Ridgefield",
+    "country": "USA",
+    "key": "frc2070",
+    "name": "Ridgefield Board of Education/Ridgefield PTA/Picatinny STEM/General Devices/DoDSTEM & Ridgefield Memorial High",
+    "nickname": "Royals",
+    "state_prov": "New Jersey",
+    "team_number": 2070
+  },
+  {
+    "city": "Tunkhannock",
+    "country": "USA",
+    "key": "frc222",
+    "name": "Guyette Communication/Procter and Gamble/Print to 3D/Northeast PA Industrial Resource Center/Tunkhannock Chapter of the Rotary International & Tunkhannock Hs",
+    "nickname": "Tigertrons",
+    "state_prov": "Pennsylvania",
+    "team_number": 222
+  },
+  {
+    "city": "York",
+    "country": "USA",
+    "key": "frc225",
+    "name": "PRESIDIO/NRG/St. Onge Company/TE Connectivity/Coupling Corporation of America/York County Community Foundation/DLA Piper/ASGCO Complete Conveyor Solutions/Leidos/BAE Systems/DeWALT/Penn-Air & Hydraulics/Google&TechFire Robotics of York",
+    "nickname": "TechFire",
+    "state_prov": "Pennsylvania",
+    "team_number": 225
+  },
+  {
+    "city": "North Brunswick",
+    "country": "USA",
+    "key": "frc25",
+    "name": "Bristol-Myers Squibb Co./Picatinny Arsenal. US Dept of Defense/Neil Parikh/CIMA/North Brunswick Public Schools/Raider Robotix Parent and Mentor Organization&North Brunswick Twp High",
+    "nickname": "Raider Robotix",
+    "state_prov": "New Jersey",
+    "team_number": 25
+  },
+  {
+    "city": "Pennington",
+    "country": "USA",
+    "key": "frc293",
+    "name": "Bristol-Myers Squibb / Smith Foundation / Hopewell Valley Education Foundation / Continuum Dynamics  / SRI International / Onshape / SolidWorks  & Hopewell Valley Central High School",
+    "nickname": "Team S.P.I.K.E.",
+    "state_prov": "New Jersey",
+    "team_number": 293
+  },
+  {
+    "city": "Newton",
+    "country": "USA",
+    "key": "frc3142",
+    "name": "PackDevCo/Edward Griffiths/NASA/National Defense Education Program/Johnson & Johnson/ThorLabs&Newton High",
+    "nickname": "Aperture",
+    "state_prov": "New Jersey",
+    "team_number": 3142
+  },
+  {
+    "city": "Clifton",
+    "country": "USA",
+    "key": "frc3314",
+    "name": "NewsCorp/Clifton Public Schools/Hobin Construction/The Warehouse @ 308 Colfax/Hobin dot Engineering/Montclair Society of Engineers/National Defense Education Program & Picatinny Arsenal/Mustang Pride/Clifton Education Association/Syracuse Signs/Solve a Crime Games/The Starr Foundation/KendalTech/Keith Hobin Design/Donorschoose.org/Burlington Coat Factory/ExxonMobil/Think It Up.org/KIA Motors/Dewar Family/Solid Ground Systems, Inc/Business Partners on Colfax Ave/Fed-Ex/SOLIDWORKS/Friends of the Mechanical Mustangs & Clifton High",
+    "nickname": "Mechanical Mustangs",
+    "state_prov": "New Jersey",
+    "team_number": 3314
+  },
+  {
+    "city": "Union City",
+    "country": "USA",
+    "key": "frc3340",
+    "name": "Union City Board of Education/Picatinny STEM/All American Recycling Corp. - Vincent M. Ponte President & Union City High School & Jose Marti Freshman Academy",
+    "nickname": "Union City MagneGeeks",
+    "state_prov": "New Jersey",
+    "team_number": 3340
+  },
+  {
+    "city": "Ambler",
+    "country": "USA",
+    "key": "frc341",
+    "name": "Comcast/The Boeing Company/BAE Systems/Lockheed Martin/Cobham Defense Electronics/Janssen Biotech Inc./D.i.D. Agency/Denney Electric Supply/Computer Components Corporation/Penn State Great Valley&Wissahickon Shs",
+    "nickname": "Miss Daisy",
+    "state_prov": "Pennsylvania",
+    "team_number": 341
+  },
+  {
+    "city": "Iselin",
+    "country": "USA",
+    "key": "frc3515",
+    "name": "Picatinny Arsenal/BAE Systems & John F Kennedy Mem H",
+    "nickname": "Pneubotic Mustangs ",
+    "state_prov": "New Jersey",
+    "team_number": 3515
+  },
+  {
+    "city": "Flemington",
+    "country": "USA",
+    "key": "frc3637",
+    "name": "Nokia Bell Labs/Underwriters Laboratories/Raritan Valley Community College/Ethicon&Hunterdon Central High",
+    "nickname": "The Daleks",
+    "state_prov": "New Jersey",
+    "team_number": 3637
+  },
+  {
+    "city": "Warren",
+    "country": "USA",
+    "key": "frc41",
+    "name": "Picatinny Arsenal/The Knotts Company/Picut Manufacturing/Finaly Contractors/Power Tech/Thor Labs/Document Solutions/Warren Lions Club/IntelLiDrives/Intuitive Surgical/Watchung Hills Education and Technology Foundation&Watchung Hills Reg H",
+    "nickname": "RoboWarriors",
+    "state_prov": "New Jersey",
+    "team_number": 41
+  },
+  {
+    "city": "Somerset",
+    "country": "USA",
+    "key": "frc4281",
+    "name": "The Center School Foundation/Picatinny Arsenal STEM & Center School",
+    "nickname": " Bulldogs",
+    "state_prov": "New Jersey",
+    "team_number": 4281
+  },
+  {
+    "city": "Roxbury Township",
+    "country": "USA",
+    "key": "frc4361",
+    "name": "The National Defense Education Program/Roxbury Township Board of Education/The Wal-Mart Foundation/Instru-Met Corporation/The Roxbury Rotary Club/STORIS Software Solutions&Roxbury High",
+    "nickname": "Roxbotix",
+    "state_prov": "New Jersey",
+    "team_number": 4361
+  },
+  {
+    "city": "South River",
+    "country": "USA",
+    "key": "frc4573",
+    "name": "J-Packaging & Display/Decorcrete/East Coast Custom/Carlee's BBQ/Friends of South River HS Rambotics Team 4573&South River High",
+    "nickname": "SRNJRambotics",
+    "state_prov": "New Jersey",
+    "team_number": 4573
+  },
+  {
+    "city": "Broomall",
+    "country": "USA",
+    "key": "frc4575",
+    "name": "NASA/COMCAST/BHCU/BOEING/PhillyMade Apparel/The Ridley Township Police Association & Girl Scouts of Eastern PA",
+    "nickname": "The Tin Mints",
+    "state_prov": "Pennsylvania",
+    "team_number": 4575
+  },
+  {
+    "city": "Philadelphia",
+    "country": "USA",
+    "key": "frc4637",
+    "name": "Comcast NBC/US Navy/2017 FIRST Hardship Grant/Utaski Fund&St Hubert Catholic High School for Girls",
+    "nickname": "BambieBotz",
+    "state_prov": "Pennsylvania",
+    "team_number": 4637
+  },
+  {
+    "city": "Ramsey",
+    "country": "USA",
+    "key": "frc4653",
+    "name": "Picatinny Arsenal/Manhattan College/TSItouch & Don Bosco Prep High School",
+    "nickname": "Ironmen Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 4653
+  },
+  {
+    "city": "Havertown",
+    "country": "USA",
+    "key": "frc484",
+    "name": "Comcast/Piazza Honda of Springfield/Farryn Electric/Adam Mechanical Heating & Air Conditioning & Plumbing/The Wyatt Family&Haverford Shs",
+    "nickname": "Roboforce",
+    "state_prov": "Pennsylvania",
+    "team_number": 484
+  },
+  {
+    "city": "East Orange",
+    "country": "USA",
+    "key": "frc5310",
+    "name": "Picatinny Arsenal/NDEP/Estate of Helen Matekel/Assemblyman Thomas Giblin/NorthEast Regional Councile of Carpenters & East Orange STEM Academy & East Orange STEM Academy",
+    "nickname": "Eagles Apex",
+    "state_prov": "New Jersey",
+    "team_number": 5310
+  },
+  {
+    "city": "Jersey City",
+    "country": "USA",
+    "key": "frc5438",
+    "name": "Eastern Millwork Inc. / NASA / 2016 Rookie Grant / Panepinto Properties / Weichert Realtors  / Donovan Group / LC Auto Repair & St Peters Preparatory School",
+    "nickname": "Technological Terrors",
+    "state_prov": "New Jersey",
+    "team_number": 5438
+  },
+  {
+    "city": "Montclair",
+    "country": "USA",
+    "key": "frc555",
+    "name": "Judy and Josh Weston/Montclair Fund for Educational Excellence/Montclair Society of Engineers&Montclair High",
+    "nickname": "Montclair Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 555
+  },
+  {
+    "city": "Bound Brook",
+    "country": "USA",
+    "key": "frc56",
+    "name": "Ethicon/Picatinny Arsenal&Bound Brook High",
+    "nickname": "R.O.B.B.E.",
+    "state_prov": "New Jersey",
+    "team_number": 56
+  },
+  {
+    "city": "South Plainfield",
+    "country": "USA",
+    "key": "frc5624",
+    "name": "Kobo Products/Picatinny Arsenal/Jack Pedersen Realty/Elks Lodge 2298/Firehouse Grill&South Plainfield High",
+    "nickname": "TIGER TECH Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 5624
+  },
+  {
+    "city": "Trenton",
+    "country": "USA",
+    "key": "frc5666",
+    "name": "NRG & STEMCivics Charter School",
+    "nickname": "Purple Lightning",
+    "state_prov": "New Jersey",
+    "team_number": 5666
+  },
+  {
+    "city": "Trenton",
+    "country": "USA",
+    "key": "frc5684",
+    "name": "Lockheed Martin /2015 FRC Rookie Grant/Picatinny Arsenal/Mission Solutions LLC/Tuchman Foundation&Trenton Catholic School Upper School",
+    "nickname": "Iron Mechs",
+    "state_prov": "New Jersey",
+    "team_number": 5684
+  },
+  {
+    "city": "West Orange",
+    "country": "USA",
+    "key": "frc5992",
+    "name": "Charles Edison Foundation/ASCO Numatics &Seton Hall Preparatory School",
+    "nickname": "Pirates",
+    "state_prov": "New Jersey",
+    "team_number": 5992
+  },
+  {
+    "city": "Media",
+    "country": "USA",
+    "key": "frc6327",
+    "name": "4-H of Delaware County/The Eastern Pennsylvania Robotics Alliance/Head Shot Props/Boeing/The Argosy Foundation&4-H",
+    "nickname": "Tin Men",
+    "state_prov": "Pennsylvania",
+    "team_number": 6327
+  },
+  {
+    "city": "East Brunswick",
+    "country": "USA",
+    "key": "frc6897",
+    "name": "Harris Corporation/Nokia Bell Labs/NASA/Rutgers, The State University Mechanical and Aerospace Engineering Department/East Brunswick Education Foundation&East Brunswick High",
+    "nickname": "Astraea Robotics",
+    "state_prov": "New Jersey",
+    "team_number": 6897
+  },
+  {
+    "city": "Hillsborough",
+    "country": "USA",
+    "key": "frc75",
+    "name": "J&J Consumer Inc/Summit Associates/Richmond Foundation/Draftek Design/Kuchavik Consulting & Design/Picatinny Arsenal/Rutgers Dept of Physics and Technology/Active Disposal&Hillsborough High",
+    "nickname": "RoboRaiders",
+    "state_prov": "New Jersey",
+    "team_number": 75
+  }
+]

@@ -1,0 +1,66 @@
+<div id="eventOverview">
+	<div ng-controller="mainEventViewerCtrl">
+
+		<!-- Buttons -->
+		<div id="addDataButtons">
+			<a href="#/event/{{eventID}}" class="btn">Match Schedule</a>
+			<a href="#/event/{{eventID}}/addMatchRecord" class="btn">Add Match Record</a>
+			<a href="#/event/{{eventID}}/addInterview" class="btn">Add Interview</a>
+		</div>
+		
+		<h2>{{event.name}}</h2>
+		
+		<!-- Teams and their game information -->
+		<h3>Teams</h3>
+		<table class="table table-striped">
+			<tr>
+				<th>i</th>
+				<th ng-click="reverse=!reverse; order('team_num', reverse)">Team Num</th> <!-- this is reverses the column -> ng-click="reverse=!reverse; order('width', reverse)"-->
+				<th ng-click="reverse=!reverse; order('avgAutonScale', reverse)">Avg Auton Scale</th> <!-- this is reverses the column -> ng-click="reverse=!reverse; order('width', reverse)"-->
+				<th ng-click="reverse=!reverse; order('avgAutonSwitch', reverse)">Avg Auton Switch</th>
+				<th ng-click="reverse=!reverse; order('avgScale', reverse)">Avg Scale</th>
+				<th ng-click="reverse=!reverse; order('avgAllianceSwitch', reverse)">Avg Ally Switch</th>
+				<th ng-click="reverse=!reverse; order('avgEnemySwitch', reverse)">Avg Opp. Switch</th>
+				<th ng-click="reverse=!reverse; order('avgVault', reverse)">Avg Vault</th>
+				<th ng-click="reverse=!reverse; order('midlinePercent', reverse)">Midline %</th>
+				<th ng-click="reverse=!reverse; order('hangPercent', reverse)">Hang %</th>
+			
+				<!--<th ng-click="reverse=!reverse; order('avgAutonScored', reverse)">Avg. Auton Scored</th>
+					<th ng-click="reverse=!reverse; order('totalAutonScored', reverse)">Total Auton Scored</th>-->
+
+			</tr>
+			<tr ng-repeat="team in teams" ng-click="openTeamViewer(team)">
+				<td>{{$index + 1}}</td>
+				<td>{{team.team_num}}</td>
+				<td>{{team.avgAutonScale}}</td>
+				<td>{{team.avgAutonSwitch}}</td>
+				<td>{{team.avgScale}}</td>
+				<td>{{team.avgAllianceSwitch}}</td>
+				<td>{{team.avgEnemySwitch}}</td>
+				<td>{{team.avgVault}}</td>
+				<td>{{team.midlinePercent}}</td>
+				<td>{{team.hangPercent}}</td>
+
+			</tr>
+		</table>
+		
+		<!-- Teams and their interview data
+		<h3>Interview Data</h3>
+		<table class="table table-striped">
+			<tr>
+				<th ng-click="reverse=!reverse; order('team_num', reverse)">#</th>
+				<th ng-click="reverse=!reverse; order('drive_system', reverse)">Drive System</th>
+				<th ng-click="reverse=!reverse; order('wheel_num', reverse)">Wheel #</th>
+				<th ng-click="reverse=!reverse; order('speed', reverse)">Speed</th>
+				<th ng-click="reverse=!reverse; order('primary_goal', reverse)">Primary Shooting Goal</th>
+			</tr>
+			<tr ng-repeat="interviewRecord in interviews">
+				<td>{{interviewRecord.team_num}}</td>
+				<td>{{interviewRecord.drive_system}}</td>
+				<td>{{interviewRecord.wheel_num}}</td>
+				<td>{{interviewRecord.speed}}</td>
+				<td>{{interviewRecord.primary_goal}}</td>
+			</tr>
+		</table>-->
+	</div>
+</div>

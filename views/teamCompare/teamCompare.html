@@ -1,0 +1,66 @@
+<div id="matchOverview">
+	<div ng-controller="MatchViewerCtrl">
+		
+		<div>
+			<br>
+			<a href = "#/event/{{event.event_id}}" class = "btn" >Return to Index</a>
+			</br>
+			<br>
+			<a href = "#/event/{{event.event_id}}/match/{{prev_match}}" class = "btn">Go to Match {{prev_match}}</a>
+			<a href = "#/event/{{event.event_id}}/match/{{next_match}}" class = "btn">Go to Match {{next_match}}</a>
+			</br>
+		</div>
+		
+		
+		<h1> Match {{match_num}} - {{event.name}}</h1>
+		<br>
+        
+		<a href="#/event/{{event.event_id}}/editEventMatch/{{match_num}}">Edit Match Data</a>
+        <h3>Red Alliance Data - Penalties (in pts): {{penalty_points}} - Final Score: {{matches[0].red_score}}</h3>
+		<table class="table table-striped">
+			<tr>
+				<th>Team Num</th> <!-- this is reverses the column -> ng-click="reverse=!reverse; order('width', reverse)"-->
+				<th>Avg Auton Scale</th> <!-- this is reverses the column -> ng-click="reverse=!reverse; order('width', reverse)"-->
+				<th>Avg Auton Switch</th>
+				<th>Avg Scale</th>
+				<th>Avg Ally Switch</th>
+				<th>Avg Opp. Switch</th>
+				<th>Midline %</th>
+				<th>Hang %</th>
+			</tr>
+			<tr ng-repeat="team in red_alliance" ng-click="openTeamViewer(team)">
+				<td>{{team.team_num}}</td>
+				<td>{{team.avgAutonScale}}</td>
+				<td>{{team.avgAutonSwitch}}</td>
+				<td>{{team.avgScale}}</td>
+				<td>{{team.avgAllianceSwitch}}</td>
+				<td>{{team.avgEnemySwitch}}</td>
+				<td>{{team.midlinePercent}}</td>
+				<td>{{team.hangPercent}}</td>
+			</tr>
+		</table>
+		<h3>Blue Alliance Data - Penalties (in pts): {{penalty_points}} - Final Score: {{matches[0].blue_score}}</h3>
+		<table class="table table-striped">
+			<tr>
+            <th ng-click="reverse=!reverse; order('width', reverse)">Team Num</th>
+				<th>Avg Auton Scale</th> <!-- this is reverses the column -> ng-click="reverse=!reverse; order('width', reverse)"-->
+				<th>Avg Auton Switch</th>
+				<th>Avg Scale</th>
+				<th>Avg Ally Switch</th>
+				<th>Avg Opp. Switch</th>
+				<th>Midline %</th>
+				<th>Hang %</th>
+			</tr>
+			<tr ng-repeat="team in blue_alliance" ng-click="openTeamViewer(team)">
+				<td>{{team.team_num}}</td>
+				<td>{{team.avgAutonScale}}</td>
+				<td>{{team.avgAutonSwitch}}</td>
+				<td>{{team.avgScale}}</td>
+				<td>{{team.avgAllianceSwitch}}</td>
+				<td>{{team.avgEnemySwitch}}</td>
+				<td>{{team.midlinePercent}}</td>
+				<td>{{team.hangPercent}}</td>
+			</tr>
+		</table>
+	</div>
+</div>

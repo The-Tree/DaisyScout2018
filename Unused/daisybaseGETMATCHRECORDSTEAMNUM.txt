@@ -1,0 +1,16 @@
+
+	public function getMatchRecordsTeamNum($tNum) {
+		
+		$matchRecords = array();
+		$query = $this->db->prepare("SELECT * FROM " . self::MATCHRECORDS . " WHERE team_num=:number");
+        $query->bindValue(':number', $tNum, SQLITE3_INTEGER);
+		
+		$result = $query->execute();
+		
+		while($res = $result->fetchArray(SQLITE3_ASSOC)) {
+			array_push($matchRecords, $res);
+		}
+		
+		return $matchRecords;
+	}
+	

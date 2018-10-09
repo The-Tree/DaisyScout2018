@@ -1,0 +1,10 @@
+1. create DB folder in www root directory
+
+2. from the SQL directory, in a command prompt, run:
+sqlite3 -init initializeDatabase.sql
+
+3. in the sqlite3 prompt, type
+.save daisyscout.db
+
+4. Copy the daisyscout.db file from SQL to the www/DB folder
+	

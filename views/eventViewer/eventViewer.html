@@ -1,0 +1,38 @@
+<div id="eventOverview">
+	<div ng-controller="EventViewerCtrl">
+
+		<!-- Buttons -->
+		<div id="addDataButtons">
+			<a href="#/event/{{eventID}}/teams" class="btn">Team Averages</a>
+			<a href="#/event/{{eventID}}/addMatchRecord" class="btn">Add Match Record</a>
+			<a href="#/event/{{eventID}}/addInterview" class="btn">Add Interview</a>
+		</div>
+		
+		<h2>{{event.name}}</h2>
+		
+		<!-- Teams and their game information -->
+		<h3>Matches</h3>
+		<table class="table table-striped">
+			<tr>
+				<th>i</th>
+				<th>Match Number</th> <!-- ng-click="reverse=!reverse; order('team_num', reverse) <---how to make it order -->
+				<th>Red Alliance</th>
+				<th>Red Alliance Score</th>
+				<th>Blue Alliance Score</th>
+				<th>Blue Alliance</th>
+			</tr>
+			<tr ng-repeat="match in matches" ng-click="openMatchViewer(match)">
+				<td>{{$index + 1}}</td>
+				<td>{{match.match_num}}</td>
+				<td>{{match.red_alliance1}}<!--red 1-->
+					{{match.red_alliance2}}<!--red 2-->
+					{{match.red_alliance3}}</td><!--red 3-->
+				<td>{{match.red_score}}</td>
+				<td>{{match.blue_score}}</td>
+				<td>{{match.blue_alliance1}}<!--blue 1-->
+					{{match.blue_alliance2}}<!--blue 2-->
+					{{match.blue_alliance3}}</td><!--blue 3-->
+			</tr>
+		</table>
+	</div>
+</div>
