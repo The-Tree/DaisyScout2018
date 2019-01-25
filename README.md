@@ -1,4 +1,4 @@
-# DaisyScout2016
+# DaisyScout2018
 
 In order to run locally, follow the following steps (ADMIN Privileges Required)
 1. Download wampserver (wampserver.com)
